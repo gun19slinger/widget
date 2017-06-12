@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Widget</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="96x96">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="preloader">
+        <span class="preloader__image"></span>
+    </div>
+
+    <h1 class="page-title">Widget</h1>
+
+    <div class="map">
+        <img class="map__image" src="img/nfl.jpg" alt="NFL" width="900px" height="580px">
+    </div>
+
+    <script src="js/isIE.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/Widget.js"></script>
+    <script>
+        var widget = new Widget({
+            container: document.querySelector('.map'),
+            regions: [
+                {
+                    id: 'm2kr',
+                    left: 300,
+                    top: 150,
+                    width: 100,
+                    height: 80
+                },
+                {
+                    id: '9zdu',
+                    left: 500,
+                    top: 400,
+                    width: 200,
+                    height: 150
+                }
+            ]
+        });
+    </script>
+
+</body>
+</html>
